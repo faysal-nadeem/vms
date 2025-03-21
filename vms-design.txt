@@ -1,0 +1,153 @@
+PROJECT NAME
+	Name= Vehicle Management System
+	Company Name = Care Services Consortium, Faisalabad.
+
+TECHNOLOGIES TO BE USED
+
+	1.	Codebase = python
+	2.	STREAMLIT APPLICATION
+	3.	PDF Library = appropriate library for complex and modern pdf report generaton
+
+DATABASE:
+
+	1.	Database should have following fields:
+			i.		p_key
+			ii.		VEH_ID
+			iii.	REG_NO
+			iv.		VEHICLE_TYPE
+			v.		MAKE
+			vi.		MODEL
+			vii.	YEAR
+			viii.	OWNER
+			ix.		USED_FOR
+
+DATA INPUT
+
+	1. 	IMPORT DATA FORM
+			a.	this form should serve the purpose of importing data from csv or excel file
+			
+			-	csv/excel file has following fields
+				i.		VEH_ID
+				ii.		REG_NO
+				iii.	VEHICLE_TYPE
+				iv.		MAKE
+				v.		MODEL
+				vi.		YEAR
+				vii.	OWNER
+				viii.	USED_FOR
+
+	2.	DATA
+			a.	Vehicle Types
+					Vehicle include but not limited to the following:
+					
+					i.		Chain Arm Roll
+					ii.		Compactor
+					iii.	Dumper (20m3)
+					iv.		Dumper (5m3)
+					v.		Front End Loader
+					vi.		Loader Rickshaw
+					vii.	Mechanical Sweeper
+					viii.	Mini Tipper
+					ix.		Tractor Loader
+					x.		Tractor Trolley
+					xi.		Water Bowzer
+					xii.	Gulli Sucker
+					xiii.	Drain Cleaner
+					(NOTE: Don't add any mock vehicle type yourself)
+
+			b.	Usage Types
+					Usage (USED_FOR) Categories include but not limited to the following:
+					i.		Container Base Collection
+					ii.		Secodary Waste Collection
+					iii.	Bulk Waste Collection
+					iv.		Door to Door (Residential)
+					v.		Mechanical Sweeping
+					vi.		Door to Door (Commercial)
+					vii.	Mechanical Washing
+					(NOTE: Don't add any mock USAGE type yourself)
+	
+	2.	ADD/EDIT VEHICLE FORM
+			a.	this form will be used for following
+				i.		to view/add/edit the Vehicles Data
+				ii.		for addiion/edit, dropdown menues should be available for
+						-	Vehicle Types
+						-	Usage Category (used_for)
+				iii.	to View, User should be provided with Vehicle Count for
+						-	Total Vehicles
+						-	Vehicle Types	
+						-	Usage Cateories
+			b.	Vehicle Delete Option
+						
+	3.	VEHICLE GENERATION FORM
+	
+			a.	This form will serve the purpose to generate vehicles of various types according to the need
+			b.	it should have all the vehicles types noted in it with the user input field for no. of 
+				vehicles required of that category ie
+				- Loader Rickshaw	| 3 |
+				- Mini Tipper		| 6 |
+				  etc.
+			c.	After taking the input from the user it should randomly generate all the relevant fields 
+				same as other vehicles of that type already in the system have.
+				- this includes all fields including REG_NO
+				
+	4.	DESIGN / UI
+	
+			a.	Home/Index Page
+				i.		The overall look of the system should be elegant, modern, sleek and professional, specially the	
+						the index page, it should provide all the necessary details of the system presented  beautifully.
+						which includes;
+						(1) Admin Panel Options 
+							(a)	Delete/Reset Database button
+							(b)	Generate Vehicls Form Link
+						(2) Total No. of Vehicles 
+						(3)	Type Wise and Usage Wise Vehicle Count
+						(4)	Links to ADD, EDIT, DELETE FORMS/Functions
+						(5) Link to Reports Page
+						(6) All Vehicles Table with Search option (in all fields)
+			
+	5.	REPORTS
+	
+			a.	All the Reports should convert to PDF, it is essential
+			
+			b.	There are two main report types
+				i.		Reports by Vehicle Type 
+				ii.		Reports by Vehicle Usage (USED_FOR)
+
+			c.  All the reports should have Page No. as follows "Page 1 of 11"
+			d.	The Report Table Headers should be repeated on every Page.
+			e.	Reports should include all the fields and should be in landscape mode.
+			f.	Report design should be elegant, prfessional and modern
+										
+	
+FOLLOWING THINGS TO BE NOTED IN VEHICLE GENERATION FORM:
+		1.	VEH_ID Codes are as follows and they should be assigned from the last assigned id to next for new
+		    vehicle in that category;
+			i.		Chain Arm Roll - AR-001, AR-002 ....
+			ii.		Compactor - C-001,C-002,....
+			iii.	Dumper (20m3) - D-001,D-002,D-003,....
+			iv.		Dumper (5m3) - D-001, D-002, D-003,...
+			v.		Front End Loader - FL-01, FL-02, ....
+			vi.		Loader Rickshaw - LR-001, LR-002,....
+			vii.	Mechanical Sweeper - MS-01, MS-02,...
+			viii.	Mini Tipper - MT-01, MT-02, ....
+			ix.		Tractor Loader - TL-01, TL-02,...
+			x.		Tractor Trolley - TT-01, TT-02,....
+			xi.		Water Bowzer - MW-01, MW-02,....
+			xii.	Gulli Sucker - GS-01, ...
+			xiii.	Drain Cleaner - DC-01, ...
+		
+		2.	USAGE CATEGORY (USED_FOR) 
+			Usage category should be auto assigned to newly generated vehicles as per following:
+			i.		Chain Arm Roll -->	Container Base Collection
+			ii.		Compactor -->	Container Base Collection
+			iii.	Dumper (20m3)	-->	Secondary Waste Collection
+			iv.		Dumper (5m3) --> Secondary Waste Collection
+			v.		Front End Loader --> Secondary Waste Collection	
+			vi.		Loader Rickshaw --> Door to Door (Residential)
+			vii.	Mechanical Sweeper --> Mechanical Sweeping
+			viii.	Mini Tipper --> Door to Door (Commercial)
+			ix.		Tractor Loader --> Bulk Waste Collection
+			x.		Tractor Trolley --> Bulk Waste Collection
+			xi.		Water Bowzer --> Mechanical Washing
+			xii.	Gulli Sucker --> Dumpsite Management
+			xiii.	Drain Cleaner --> 

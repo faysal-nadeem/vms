@@ -1,0 +1,104 @@
+/* PDF Specific Styles */
+@page {
+  size: landscape;
+  margin: 1cm;
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-size: 9pt;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 11pt;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #004d33;
+  overflow: hidden;
+}
+
+.report-info-container {
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+.report-title {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #004d33;
+}
+
+.report-date {
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.report-info {
+  font-size: 10pt;
+  margin-bottom: 20px;
+}
+
+.logo {
+  float: right;
+  margin-left: 20px;
+  width: 20%;
+  text-align: right;
+}
+
+.logo img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  display: table-header-group;
+}
+
+th {
+  background-color: #004d33;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+  font-size: 10pt;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.footer {
+  text-align: center;
+  font-size: 8pt;
+  color: #666;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
